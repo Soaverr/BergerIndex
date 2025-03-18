@@ -1,0 +1,375 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar-logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('image/ca4.png') no-repeat center center/cover;
+    position: relative;
+    margin-top: 60px;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    z-index: 1;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ffcc00;
+    color: #111;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Company Introduction Section */
+  .company-intro {
+    padding: 40px 20px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .company-intro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro-burger-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .intro-text h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  
+  /* Burger Menu Section */
+  .burger-menu {
+    padding: 60px 20px;
+    background-color: #222;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffcc00;
+  }
+  
+  .burger-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .burger-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .burger-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .burger-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  
+  .burger-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+  }
+  
+  .buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #111;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Login Section */
+  .login {
+    background-color: #222;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .login-container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login h2 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .input-field input:focus {
+    border-color: #ffcc00;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #111;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .navbar-logo a {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-links {
+      display: block;
+      margin-top: 20px;
+    }
+  
+    .navbar-links li {
+      margin-bottom: 15px;
+    }
+  
+    .hero {
+      height: 70vh;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  
+    .company-intro-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-burger-img {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+  
+    .burger-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .burger-item {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .login-container {
+      width: 80%;
+      padding: 30px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Portrait) */
+  @media screen and (max-width: 480px) {
+    .navbar-logo a {
+      font-size: 1.3rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .burger-item {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .burger-item img {
+      width: 80%;
+    }
+  
+    .login-container {
+      width: 90%;
+      padding: 25px;
+    }
+  }
+  
